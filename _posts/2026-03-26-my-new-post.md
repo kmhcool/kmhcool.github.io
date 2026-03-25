@@ -12,8 +12,8 @@ Hope it looks the same.
 
 I generated this around 01:03 am. However, I think I tried this around 11pm at least with pages full of tabs.
 
-{% include image.html src="/assets/img/Screenshot_20260326_013253.png" alt="A description of the image" caption="This is an image caption" %}
 
+![Alt text](assets/img/Screenshot_20260326_013253.png)
 
 If it works, don't touch it.
 
