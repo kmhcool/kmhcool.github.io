@@ -1,0 +1,7 @@
+title: Thanawat — Developer & systems tinkerer
+description: Practical software for public transport, safety education, automation, and local-first infrastructure.
+url: https://kmhcool.win
+lang: en
+exclude:
+  - README.md
+  - myblog

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3f0e8"/>
+  <circle cx="1080" cy="-10" r="330" fill="#ff6b48" opacity=".22"/>
+  <path d="M742 100c180 0 140 218 326 218" fill="none" stroke="#ff6b48" stroke-width="18" stroke-linecap="round" stroke-dasharray="18 28"/>
+  <path d="M802 540c0-160 185-110 185-310" fill="none" stroke="#153236" stroke-width="18" stroke-linecap="round" stroke-dasharray="18 28"/>
+  <circle cx="742" cy="100" r="24" fill="#f3f0e8" stroke="#153236" stroke-width="10"/>
+  <circle cx="987" cy="318" r="24" fill="#c8f780" stroke="#153236" stroke-width="10"/>
+  <rect x="74" y="74" width="68" height="68" rx="24" fill="#153236"/>
+  <text x="108" y="123" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="40" fill="#c8f780">K</text>
+  <text x="74" y="255" font-family="Georgia,serif" font-size="82" letter-spacing="-4" fill="#153236">Thanawat / kmhcool</text>
+  <text x="74" y="350" font-family="Arial,sans-serif" font-size="36" fill="#52676a">Practical software for the world</text>
+  <text x="74" y="399" font-family="Georgia,serif" font-size="44" font-style="italic" fill="#dd4a2b">outside the screen.</text>
+  <text x="74" y="546" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#153236">KMHCOOL.WIN</text>
+</svg>
