@@ -343,19 +343,40 @@ svg { display: block; max-width: 100%; }
   display: inline-flex;
   gap: 10px;
   align-items: center;
-  margin-top: 25px;
   color: var(--green);
   font-size: 13px;
   font-weight: 800;
   text-decoration: none;
 }
-.text-link span, .article-arrow { transition: transform 180ms ease; }
-.text-link:hover span, .article-row:hover .article-arrow { transform: translate(3px,-3px); }
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  align-items: center;
+  margin-top: 25px;
+}
+.demo-link {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 43px;
+  padding: 0 17px;
+  color: var(--ink);
+  background: var(--coral);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 820;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease;
+}
+.demo-link-green { background: var(--green); }
+.demo-link:hover { background: var(--white); transform: translateY(-2px); }
+.text-link span, .demo-link span, .article-arrow { transition: transform 180ms ease; }
+.text-link:hover span, .demo-link:hover span, .article-row:hover .article-arrow { transform: translate(3px,-3px); }
 .project-status {
   display: inline-flex;
   gap: 9px;
   align-items: center;
-  margin-top: 24px;
   color: var(--green);
   font-size: 12px;
   font-weight: 760;

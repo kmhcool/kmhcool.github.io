@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="Two fast, practical games for building safer venue and crowd habits.">
+  <meta property="og:title" content="Exitwise — Crowd Safety Games">
+  <meta property="og:description" content="Two quick browser games for building safer venue and crowd habits.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kmhcool.win/exitwise/">
+  <link rel="canonical" href="https://kmhcool.win/exitwise/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <title>Exitwise — Crowd Safety Games</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to game</a>
+
+  <header class="site-header">
+    <button class="brand" type="button" data-screen="home" aria-label="Exitwise home">
+      <span class="brand-mark" aria-hidden="true">
+        <span></span><span></span>
+      </span>
+      <span>EXITWISE</span>
+    </button>
+    <div class="header-status">
+      <a class="portfolio-link" href="/" aria-label="Back to Thanawat's portfolio">Portfolio ↗</a>
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Safety lab</span>
+      <span class="score-chip"><strong id="total-points">0</strong> XP</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="screen home-screen is-active" id="home" aria-labelledby="home-title">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Play it safe · Issue 01</p>
+          <h1 id="home-title">Good instincts<br><em>start here.</em></h1>
+          <p class="hero-lede">Two fast games. Real crowd-safety habits. Learn to notice a second way out and move with a crowd—without becoming part of the problem.</p>
+          <div class="hero-actions">
+            <button class="button button-dark" type="button" data-screen="ways">
+              Start first game <span aria-hidden="true">↗</span>
+            </button>
+            <button class="text-button" type="button" data-scroll-games>See both games ↓</button>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-ring ring-one"></div>
+          <div class="hero-ring ring-two"></div>
+          <div class="hero-ring ring-three"></div>
+          <div class="hero-exit">
+            <span class="running-person">➜</span>
+            <strong>EXIT</strong>
+          </div>
+          <div class="hero-people">
+            <i style="--x: 8%; --y: 64%; --c: #26241f"></i>
+            <i style="--x: 23%; --y: 74%; --c: #ee6c4d"></i>
+            <i style="--x: 38%; --y: 60%; --c: #26241f"></i>
+            <i style="--x: 52%; --y: 76%; --c: #628b7a"></i>
+            <i style="--x: 68%; --y: 63%; --c: #26241f"></i>
+            <i style="--x: 82%; --y: 75%; --c: #ee6c4d"></i>
+          </div>
+          <span class="art-label label-a">LOOK</span>
+          <span class="art-label label-b">THINK</span>
+          <span class="art-label label-c">MOVE</span>
+        </div>
+      </div>
+
+      <section class="game-select" id="games" aria-labelledby="games-title">
+        <div class="section-heading">
+          <p class="eyebrow">Choose your drill</p>
+          <h2 id="games-title">Two games. Two vital moves.</h2>
+          <p>Each takes about two minutes. Your best scores stay on this device.</p>
+        </div>
+
+        <div class="game-cards">
+          <article class="game-card card-coral">
+            <div class="card-topline">
+              <span>01 / Venue awareness</span>
+              <span class="best-score" id="ways-best">Best —</span>
+            </div>
+            <div class="card-visual venue-mini" aria-hidden="true">
+              <span class="mini-stage">STAGE</span>
+              <span class="mini-exit exit-left">EXIT</span>
+              <span class="mini-exit exit-right">EXIT</span>
+              <div class="mini-crowd"></div>
+              <span class="route-line route-a"></span>
+              <span class="route-line route-b"></span>
+            </div>
+            <h3>Two Ways Out</h3>
+            <p class="card-subtitle">Venue Safety</p>
+            <p>Scan the room, spot two usable exits, and adapt when the obvious route changes.</p>
+            <button class="button button-card" type="button" data-screen="ways">Play game <span>→</span></button>
+          </article>
+
+          <article class="game-card card-green">
+            <div class="card-topline">
+              <span>02 / Crowd movement</span>
+              <span class="best-score" id="crowd-best">Best —</span>
+            </div>
+            <div class="card-visual crowd-mini" aria-hidden="true">
+              <div class="flow-arrow"></div>
+              <div class="mini-dots"></div>
+              <span class="you-dot">YOU</span>
+            </div>
+            <h3>Exit First</h3>
+            <p class="card-subtitle">Crowd Safety</p>
+            <p>Read the flow, keep your space, and reach safety without pushing or stopping.</p>
+            <button class="button button-card" type="button" data-screen="crowd">Play game <span>→</span></button>
+          </article>
+        </div>
+      </section>
+
+      <section class="safety-strip" aria-label="Core safety reminders">
+        <p>Remember the three S’s</p>
+        <div><strong>SCAN</strong><span>Find exits early.</span></div>
+        <div><strong>SPACE</strong><span>Protect room to move.</span></div>
+        <div><strong>SIDE</strong><span>Move across pressure.</span></div>
+      </section>
+    </section>
+
+    <section class="screen game-screen ways-screen" id="ways" aria-labelledby="ways-title">
+      <div class="game-shell">
+        <div class="game-nav">
+          <button class="icon-button" type="button" data-screen="home" aria-label="Back to home">←</button>
+          <div class="game-identity">
+            <span>01</span>
+            <div><strong id="ways-title">Two Ways Out</strong><small>Venue Safety</small></div>
+          </div>
+          <button class="sound-button" type="button" data-sound-toggle aria-pressed="true">
+            <span aria-hidden="true">◖))</span><span class="sound-label">Sound on</span>
+          </button>
+        </div>
+
+        <div class="hud">
+          <div><span>Round</span><strong id="ways-round">1 / 3</strong></div>
+          <div class="hud-progress"><i id="ways-progress"></i></div>
+          <div><span>Score</span><strong id="ways-score">000</strong></div>
+        </div>
+
+        <div class="mission-panel" id="ways-intro">
+          <div class="mission-number">01</div>
+          <p class="eyebrow">Your mission</p>
+          <h2>Always know<br><em>two ways out.</em></h2>
+          <p>You have a few seconds to scan each venue. Memorize two exits, then choose the safest route when conditions change.</p>
+          <div class="rule-grid">
+            <div><span>①</span><strong>Scan</strong><small>Find every exit</small></div>
+            <div><span>②</span><strong>Remember</strong><small>Track two routes</small></div>
+            <div><span>③</span><strong>Adapt</strong><small>Avoid new hazards</small></div>
+          </div>
+          <button class="button button-dark" type="button" id="start-ways">Enter venue <span>→</span></button>
+        </div>
+
+        <div class="venue-game is-hidden" id="venue-game">
+          <div class="venue-instruction">
+            <div>
+              <p class="eyebrow" id="venue-phase-label">Scan phase</p>
+              <h2 id="venue-prompt">Find two ways out.</h2>
+            </div>
+            <div class="scan-timer" id="scan-timer" aria-live="polite">
+              <svg viewBox="0 0 42 42" aria-hidden="true">
+                <circle cx="21" cy="21" r="17"></circle>
+                <circle class="timer-ring" cx="21" cy="21" r="17"></circle>
+              </svg>
+              <strong id="timer-number">7</strong>
+            </div>
+          </div>
+
+          <div class="venue-board-wrap">
+            <div class="venue-board" id="venue-board" role="group" aria-label="Venue floor plan">
+              <div class="venue-stage"><span>LIVE</span><strong>STAGE</strong></div>
+              <div class="venue-bar">BAR</div>
+              <div class="venue-booth">SOUND</div>
+              <div class="venue-crowd" id="venue-crowd" aria-hidden="true"></div>
+              <div class="hazard-layer" id="hazard-layer" aria-hidden="true"></div>
+              <div class="route-canvas" id="route-canvas" aria-hidden="true"></div>
+              <button class="exit-door door-a" type="button" data-exit="A"><span>A</span><strong>EXIT</strong><small>West lobby</small></button>
+              <button class="exit-door door-b" type="button" data-exit="B"><span>B</span><strong>EXIT</strong><small>Side hall</small></button>
+              <button class="exit-door door-c" type="button" data-exit="C"><span>C</span><strong>EXIT</strong><small>Loading bay</small></button>
+              <button class="exit-door door-d" type="button" data-exit="D"><span>D</span><strong>EXIT</strong><small>Main doors</small></button>
+              <span class="you-marker" id="venue-you"><i></i>YOU</span>
+            </div>
+          </div>
+
+          <div class="venue-feedback" id="venue-feedback" aria-live="polite">
+            <p>Select <strong>two different exits</strong> you could reach.</p>
+            <div class="selected-routes">
+              <span id="pick-one">Route 1: —</span>
+              <span id="pick-two">Route 2: —</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-panel is-hidden" id="ways-results">
+          <p class="eyebrow">Drill complete</p>
+          <div class="result-score"><strong id="ways-final-score">0</strong><span>XP</span></div>
+          <h2 id="ways-result-title">You read the room.</h2>
+          <p id="ways-result-copy">A second exit gives you options when the obvious route stops being safe.</p>
+          <div class="takeaway">
+            <span>Keep this</span>
+            <p><strong>On arrival:</strong> point out your nearest exit and one alternative. The way you entered may not be the best way out.</p>
+          </div>
+          <div class="result-actions">
+            <button class="button button-dark" type="button" id="replay-ways">Play again</button>
+            <button class="button button-light" type="button" data-screen="crowd">Next game →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen game-screen crowd-screen" id="crowd" aria-labelledby="crowd-title">
+      <div class="game-shell">
+        <div class="game-nav">
+          <button class="icon-button" type="button" data-screen="home" aria-label="Back to home">←</button>
+          <div class="game-identity">
+            <span>02</span>
+            <div><strong id="crowd-title">Exit First</strong><small>Crowd Safety</small></div>
+          </div>
+          <button class="sound-button" type="button" data-sound-toggle aria-pressed="true">
+            <span aria-hidden="true">◖))</span><span class="sound-label">Sound on</span>
+          </button>
+        </div>
+
+        <div class="hud">
+          <div><span>Time</span><strong id="crowd-time">0:45</strong></div>
+          <div class="crowd-meter-wrap">
+            <span>Personal space</span>
+            <div class="crowd-meter"><i id="space-meter"></i></div>
+          </div>
+          <div><span>Score</span><strong id="crowd-score">000</strong></div>
+        </div>
+
+        <div class="mission-panel crowd-intro" id="crowd-intro">
+          <div class="mission-number">02</div>
+          <p class="eyebrow">Your mission</p>
+          <h2>Move smart.<br><em>Keep your space.</em></h2>
+          <p>Reach the green exit through a moving crowd. Follow open lanes, avoid dense clusters, and never push straight into pressure.</p>
+          <div class="control-demo">
+            <div class="key-cluster" aria-hidden="true">
+              <i>↑</i><i>←</i><i>↓</i><i>→</i>
+            </div>
+            <div><strong>Arrow keys / WASD</strong><small>or swipe and hold on the arena</small></div>
+          </div>
+          <button class="button button-dark" type="button" id="start-crowd">Join the flow <span>→</span></button>
+        </div>
+
+        <div class="crowd-game is-hidden" id="crowd-game">
+          <div class="crowd-callout" id="crowd-callout" aria-live="polite">
+            <span>Flow tip</span>
+            <strong>Look for open space, not the shortest line.</strong>
+          </div>
+          <div class="canvas-wrap" id="canvas-wrap">
+            <canvas id="crowd-canvas" width="960" height="520" aria-label="Crowd movement game. Use arrow keys or WASD to reach the exit."></canvas>
+            <div class="canvas-label start-label">START</div>
+            <div class="canvas-label exit-label">SAFE EXIT →</div>
+            <div class="mobile-controls" aria-label="Movement controls">
+              <button type="button" data-dir="up" aria-label="Move up">↑</button>
+              <button type="button" data-dir="left" aria-label="Move left">←</button>
+              <button type="button" data-dir="down" aria-label="Move down">↓</button>
+              <button type="button" data-dir="right" aria-label="Move right">→</button>
+            </div>
+          </div>
+          <div class="live-lessons">
+            <span class="lesson-active" id="lesson-space"><i>✓</i> Keep space</span>
+            <span id="lesson-flow"><i>✓</i> Move with flow</span>
+            <span id="lesson-edge"><i>✓</i> Use the edge</span>
+          </div>
+        </div>
+
+        <div class="results-panel is-hidden" id="crowd-results">
+          <p class="eyebrow">You made it out</p>
+          <div class="result-score"><strong id="crowd-final-score">0</strong><span>XP</span></div>
+          <h2 id="crowd-result-title">Calm beats fast.</h2>
+          <p id="crowd-result-copy">You found space and moved with the flow instead of fighting it.</p>
+          <div class="takeaway">
+            <span>Keep this</span>
+            <p><strong>In dense crowds:</strong> keep your feet planted, arms near your chest, move with the flow, and angle toward the edge when space opens.</p>
+          </div>
+          <div class="result-actions">
+            <button class="button button-dark" type="button" id="replay-crowd">Play again</button>
+            <button class="button button-light" type="button" data-screen="home">All games</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>EXITWISE © 2026</span>
+    <p>Practice awareness. In a real emergency, follow venue staff and local authorities.</p>
+    <span>STAY SHARP ↗</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
